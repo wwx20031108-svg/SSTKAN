@@ -15,51 +15,22 @@ PyTorch codes for "[Spectral-Spatial-Temporal Kolmogorov-Arnold Network for Hype
 
 ### Install
 ```
-git clone https://github.com/XY-boy/FreMamba.git
+git clone https://github.com/wwx20031108-svg/SSTKAN.git
 ```
-
-## 🎁 Dataset
-Please download the following remote sensing benchmarks:
-| Data Type | [AID](https://captain-whu.github.io/AID/) | [DOTA-v1.0](https://captain-whu.github.io/DOTA/dataset.html) | [DIOR](https://www.sciencedirect.com/science/article/pii/S0924271619302825) | [NWPU-RESISC45](https://ieeexplore.ieee.org/abstract/document/7891544)
-| :----: | :-----: | :----: | :----: | :----: |
-|Training | [Download](https://captain-whu.github.io/AID/) | None | None | None |
-|Testing | [Download](https://captain-whu.github.io/AID/) | [Download](https://captain-whu.github.io/DOTA/dataset.html) | [Download](https://drive.google.com/drive/folders/1UdlgHk49iu6WpcJ5467iT-UqNPpx__CC) | [Download](https://onedrive.live.com/?authkey=%21AHHNaHIlzp%5FIXjs&id=5C5E061130630A68%21107&cid=5C5E061130630A68&parId=root&parQt=sharedby&o=OneUp)
 
 🚩Please refer to [Dataset Processing](https://github.com/XY-boy/TTST/tree/main/dataload) to build the LR-HR training pairs.
 ## 📃 Requirements
-> * CUDA 11.1
-> * Python 3.9.13
-> * PyTorch 1.9.1
-> * Torchvision 0.10.1
-> * causal_conv1d==1.0.0
-> * mamba_ssm==1.0.1
+> * CUDA 13.1
+> * Python 3.13.9
+> * PyTorch 2.3.1
+> * numpy 1.24.3
+> * torchvision 0.15.2
+> * scipy 1.9.1
+> * matplotlib 3.7.2 
 
-## 🧩 Usage
-### Test
-- **Step I.**  Use the structure below to prepare your dataset, e.g., DOTA, and DIOR.
-/xxxx/xxx/ (your data path)
-```
-/GT/ 
-   /000.png  
-   /···.png  
-   /099.png  
-/LR/ 
-   /000.png  
-   /···.png  
-   /099.png  
-```
-- **Step II.**  Change the `--data_dir` to your data path.
-- **Step III.**  Change the `--pretrained_sr` to your pre-trained model path. 
-- **Step IV.**  Run the eval_4x.py
-```
-python eval_4x.py
-```
+## 🧩 How to use it?
+---------------------
+`python demo.py --dataset='farmland'`
 
-### Train
-```
-python train_4x.py
-```
 
-## Acknowledgement
-Our work is built upon [MambaIR](https://github.com/csguoh/MambaIR). Thanks to the author for sharing this awesome work!
 
