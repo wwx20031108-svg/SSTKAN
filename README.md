@@ -18,7 +18,6 @@ PyTorch codes for "Spectral-Spatial-Temporal Kolmogorov-Arnold Network for Hyper
 git clone https://github.com/wwx20031108-svg/SSTKAN.git
 ```
 
-🚩Please refer to [Dataset Processing](https://github.com/XY-boy/TTST/tree/main/dataload) to build the LR-HR training pairs.
 ## 📃 Requirements
 > * CUDA 13.1
 > * Python 3.13.9
