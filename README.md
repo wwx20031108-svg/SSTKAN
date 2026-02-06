@@ -1,5 +1,5 @@
 # SSTKAN
-### 📖[**Paper**] | 
+### 📖[**Paper**]
 
 PyTorch codes for "[Spectral-Spatial-Temporal Kolmogorov-Arnold Network for Hyperspectral Change Detection]
 
